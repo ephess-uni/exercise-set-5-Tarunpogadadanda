@@ -16,4 +16,4 @@ input_file = data_dir / "ex_5_4-data.csv"
 output_file = output_dir / "ex_5_4-processed.csv"
 input_data = np.loadtxt(input_file)
 input_data[input_data<0] = 0
-np.savetxt(output_file, input_file)
+np.savetxt(output_file, input_data)
