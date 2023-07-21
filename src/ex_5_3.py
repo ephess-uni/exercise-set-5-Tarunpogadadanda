@@ -15,5 +15,5 @@ if __name__ == "__main__":
     parser.add_argument('outfile')
     args = parser.parse_args()
     data = np.loadtxt(args.infile)
-    processed = (data - data.mean(axis = 0)/data.std(axis=0))
+    processed = (data - data.mean(axis = 0))/data.std(axis=0)
     np.savetxt(args.outfile, processed, fmt = "%.2e")
